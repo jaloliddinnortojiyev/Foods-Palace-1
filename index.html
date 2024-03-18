@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>f.palace</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="header_nav">
+        <div class="header_logo">
+          <img src="./img/Logo.png" alt="" />
+        </div>
+        <div class="header_img">
+          <img src="./img/header_img.png" alt="" />
+        </div>
+        <ul class="header_btns">
+          <li class="header_item">
+            <img src="./img/search.png" alt="" />
+          </li>
+          <li class="header_item">
+            <img src="./img/Cart.png" alt="" />
+          </li>
+          <li class="header_item">
+            <img src="./img/Menu.png" alt="" />
+          </li>
+        </ul>
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+    <script>
+      const burger = document.querySelector('.burger');
+      const headerBtns = document.querySelector('.header_btns');
+      burger.addEventListener('click', () => {
+        headerBtns.classList.toggle('active');
+      });
+    </script>
+    <!-- Home -->
+    <section class="home">
+      <div class="home_text">
+        <div class="home_text_subtitle"><p>__Restaurant</p></div>
+        <div class="home_text_title">
+          <p>
+            Good M<span><img src="./img/Mood1.png" alt="" /> </span>
+            <span><img src="./img/Mood1.png" alt="" /></span>d
+          </p>
+          <p>
+            Good F<span><img src="./img/food1.png" alt="" /></span
+            ><span><img src="./img/food1.png" alt="" /></span>d
+          </p>
+        </div>
+        <div class="home_text_desc">
+          <p>
+            The food palace is an neighborhood restaurent serving
+            seasonal global cuisine driven by the faire.
+          </p>
+        </div>
+        <div class="home_text_btn">
+          <button>Explore food menu</button>
+        </div>
+        <div class="home_text_msgs">
+          <img class="facebook" src="./img/Facebook.png" alt="" />
+          <img class="insta" src="./img/Instagram.png" alt="" />
+          <img class="twitter" src="./img/Twitter.png" alt="" />
+        </div>
+      </div>
+      <div class="home_img">
+        <img src="./img/home.png" alt="" />
+      </div>
+    </section>
+    <!-- About Us -->
+    <section class="about">
+      <div class="about_img">
+        <img src="./img/about.png" />
+      </div>
+      <div class="about_text">
+        <div class="about_subtitle"><p>About us</p></div>
+        <div class="about_title">
+          <p>Simple Way of Eating Delicious</p>
+        </div>
+        <div class="about_desc">
+          <p>
+            Keep healthy food readily available. When you get hungry,
+            you’re more likely to eat the first thing you see on the
+            counter or in the
+          </p>
+        </div>
+        <div class="about_btn">
+          <button>Explore our story</button>
+        </div>
+      </div>
+    </section>
+    <!-- Features -->
+    <section class="features">
+      <img
+        class="features_left_img"
+        src="./img/featuresleft.png"
+        alt=""
+      />
+      <img
+        class="features_right_img"
+        src="./img/featursright.png"
+        alt=""
+      />
+      <div class="features_header">
+        <p class="features_header_subtitle">Features</p>
+        <p class="features_header_title">Our Awesome Services</p>
+      </div>
+      <div class="features_cards">
+        <div class="features_card">
+          <div class="features_card_img">
+            <img src="./img/food.png" />
+          </div>
+          <p class="features_card_title">Quality Food</p>
+          <p class="features_card_desc">
+            Keep healthy food readily available. When you get hungry,
+            you’re more likely to
+          </p>
+        </div>
+        <div class="features_card">
+          <div class="features_card_img">
+            <img src="./img/mouth.png" />
+          </div>
+          <p class="features_card_title">Super Taste</p>
+          <p class="features_card_desc">
+            Keep healthy food readily available. When you get hungry,
+            you’re more likely to
+          </p>
+        </div>
+        <div class="features_card">
+          <div class="features_card_img">
+            <img src="./img/truck.png" />
+          </div>
+          <h3 class="features_card_title">Food Delivery</h3>
+          <p class="features_card_desc">
+            Keep healthy food readily available. When you get hungry,
+            you’re more likely to
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Recipes -->
+    <section class="recipes">
+      <div class="recipes_header">
+        <div>
+          <p class="recipes_subtitle">Recipes</p>
+          <p class="recipes_title">Most Popular Items</p>
+        </div>
+        <div class="recipes_img">
+          <img src="./img/recipes.png" alt="" />
+        </div>
+      </div>
+      <div class="recipes_cards">
+        <div class="recipes_card">
+          <div class="card_img">
+            <img src="./img/recipescard1.png" alt="" />
+          </div>
+          <div class="card_name_and_rating">
+            <p class="card_name">Flame boiled-dish</p>
+            <p class="card_rating">
+              <i class="fa-solid fa-star"></i>8.5
+            </p>
+          </div>
+          <div class="card_cart_and_cost">
+            <button><p>Add to cart</p></button>
+            <p class="card_costs">$19.99</p>
+          </div>
+        </div>
+        <div class="recipes_card">
+          <div class="card_img">
+            <img src="./img/recipescard2.png" alt="" />
+          </div>
+          <div class="card_name_and_rating">
+            <p class="card_name">Peach Melba dish</p>
+            <p class="card_rating">
+              <i class="fa-solid fa-star"></i>9.5
+            </p>
+          </div>
+          <div class="card_cart_and_cost">
+            <button><p>Add to cart</p></button>
+            <p class="card_costs">$20.99</p>
+          </div>
+        </div>
+        <div class="recipes_card">
+          <div class="card_img">
+            <img src="./img/recipescard3.png" alt="" />
+          </div>
+          <div class="card_name_and_rating">
+            <p class="card_name">Delmonico Steak dish</p>
+            <p class="card_rating">
+              <i class="fa-solid fa-star"></i>8.0
+            </p>
+          </div>
+          <div class="card_cart_and_cost">
+            <button><p>Add to cart</p></button>
+            <p class="card_costs">$18.99</p>
+          </div>
+        </div>
+      </div>
+      <div class="recipes_btn">
+        <button class="recipes_button">
+          <a href="">See more recipes</a>
+        </button>
+      </div>
+    </section>
+    <!-- Takeaway -->
+    <section class="takeaway">
+      <img src="./img/takeawayleft.png" alt="" class="takeawayleft" />
+      <img
+        src="./img/takeawayright.png"
+        alt=""
+        class="takeawayright"
+      />
+      <div class="takeaway_img">
+        <img src="./img/takeaway.png" />
+      </div>
+      <div class="takeaway_text">
+        <h5 class="takeaway_text_subtitle">Take away</h5>
+        <h1 class="takeaway_text_title">
+          Simple Way To Order Your Food
+        </h1>
+        <p class="takeaway_text_desc">
+          Keep healthy food readily available. When you get hungry,
+          you’re more likely to eat the first thing you see on the
+          counter or in the cupboard.
+        </p>
+        <div class="takeaway_btns">
+          <a href="#">
+            <img src="./img/store.png" alt="" />
+          </a>
+        </div>
+        <!-- <div class="takeaway_btns">
+          <button class="appstore">
+            <i class="fa-brands fa-apple"></i>App Store
+          </button>
+          <button class="googleplay">
+            <i class="fa-brands fa-google-play"></i>Google Play
+          </button>
+        </div> -->
+      </div>
+    </section>
+    <!-- Testimonial -->
+    <section class="testimonial">
+      <div class="testimonial_text">
+        <div class="testimonial_subtitle"><p>Testimonial</p></div>
+        <div class="testimonial_title">
+          <p>That’s what our Client Says</p>
+        </div>
+        <div class="testimonial_desc">
+          <p>
+            “Food palace is an awesome place. Food is everything we
+            are. It’s an extension of nationalist feeling, ethnic
+            feeling, your personal history, your province”
+          </p>
+        </div>
+        <div class="testimonial_designer">
+          <div class="testimonial_desiner_text">
+            <p class="testimonial_designer_name">Jessica Parker</p>
+            <p class="testimonial_designer_email">
+              Product Designer @ Kitty
+            </p>
+          </div>
+          <div class="testimonial_arrow">
+            <img src="./img/Arrow.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="testimonial_img">
+        <img src="./img/testimonial.png" alt="" />
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <img class="footer_back" src="./img/footerbck.png" alt="" />
+      <nav class="footer_nav">
+        <img src="./img/footer.png" />
+        <div class="footer_uls">
+          <ul class="footer_emails">
+            <li class="footer_email_item_logo">
+              <img src="./img/footerlogo.png" alt="" />
+            </li>
+            <li class="footer_email_item">
+              <img src="./img/message.png" />
+              <a href="#">info@food_palace.com</a>
+            </li>
+            <li class="footer_email_item">
+              <img src="./img/bi_globe.png" />
+              <a href="#">Www.Food_palace.com</a>
+            </li>
+          </ul>
+          <ul class="footer_menu">
+            <li class="footer_menu_item footer_menu_item_title">
+              Our menu
+            </li>
+            <li class="footer_menu_item">
+              <a href="#">Breakfast</a>
+            </li>
+            <li class="footer_menu_item">
+              <a href="#">Lunce</a>
+            </li>
+            <li class="footer_menu_item">
+              <a href="#">Dinner</a>
+            </li>
+          </ul>
+          <ul class="footer_information">
+            <li
+              class="footer_information_item footer_information_item_title"
+            >
+              Information
+            </li>
+            <li class="footer_information_item">
+              <a href="#">About us</a>
+            </li>
+            <li class="footer_information_item">
+              <a href="#">Testimonial</a>
+            </li>
+            <li class="footer_information_item">
+              <a href="#">Event</a>
+            </li>
+          </ul>
+          <ul class="footer_links">
+            <li class="footer_links footer_links_title">
+              Useful links
+            </li>
+            <li class="footer_links_item">
+              <a href="#">Services</a>
+            </li>
+            <li class="footer_links_item">
+              <a href="#">Support</a>
+            </li>
+            <li class="footer_links_item">
+              <a href="#">Conditions</a>
+            </li>
+          </ul>
+          <ul class="footer_social">
+            <li class="footer_social footer_social_title">
+              Social Handles
+            </li>
+            <li class="footer_social_item">
+              <a href="#">Facebook</a>
+            </li>
+            <li class="footer_social_item">
+              <a href="#">Twitter</a>
+            </li>
+            <li class="footer_social_item">
+              <a href="#">Youtube</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>
